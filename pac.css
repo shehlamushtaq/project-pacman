@@ -1,0 +1,155 @@
+body{
+    background-color: black;
+    }
+
+
+.line {
+
+        width: 500px;
+        height: 10px;
+        border-top: 2px dashed white;
+        position: absolute;
+        animation: lineanim 5s infinite linear;
+        
+    }
+    
+    
+    .line2{
+        width: 500px;
+        height: 10px;
+        border-top: 2px dashed white;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        animation: lineanim2 5s infinite linear;
+
+    }
+    
+        
+    
+    .road{
+        width: 100px;
+        width: 300%;
+        height: 50px;
+        top: 80%;
+        border-top: white   ;
+    
+       left: 0px;
+        border-top: 10px dashed white   ;
+        position: absolute;
+        animation: roadanim 9s infinite linear;
+    
+        }
+    
+    .circle{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: yellow;
+            position: absolute;
+            top: 60%;
+            left: 45%;
+            animation: bounce 1s infinite;
+            }
+    .eye{
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: black   ;
+            position: absolute;
+            top: 20%;
+            left: 43%;
+            }
+    .mouth
+ {
+        top: 25%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border-top: 25px solid transparent;
+        border-right: 50px solid black;
+        border-bottom: 25px solid transparent;
+        position: absolute;
+    animation: mouthanim is infinite ;
+        }
+
+        .food{
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: white   ;
+            position: absolute;
+            top: 40%;
+            left: 120px;
+            animation: foodanim 2s infinite;
+            }
+
+            @keyframes foodanim {
+                0% {
+                  transform: translateX(0);
+                    opacity: 1;
+                }
+                100% {
+                  transform: translateX(-70px);
+                  opacity: 0;
+                }
+              }
+
+              @keyframes mouthanim {
+                0% {
+                  transform: translateX(0);
+                    opacity: 1;
+                }
+                100% {
+                  transform: translateX(-70px);
+                  opacity: 0;
+                }
+              }
+    
+    
+        @keyframes bounce {
+            0% 
+            20% 
+            50% 
+            80% 
+            100% {
+                transform:  translateY(0);
+            }
+            60% {
+                transform: translateY(-50px);
+            }    
+        } 
+        @keyframes roadanim{
+           from {
+               left:0px
+            }
+            to{
+               left: -1200px;
+            }
+    
+        }
+
+        @keyframes lineanim{
+            from {
+                left:0px
+             }
+             to{
+                left: 1200px;
+             }
+        }
+        @keyframes lineanim2{
+            from {
+                left:100px
+             }
+             to{
+                left: 1200px;
+             }
+        }
+
+    
+    
+     
+
+
+
+
